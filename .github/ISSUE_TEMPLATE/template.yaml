@@ -1,12 +1,11 @@
 name: 🐞 Bug
 description: Create a report to help us improve Dinosaur Exploder game and/or our documentation
-title: "[Bug]: "
+title: "[Bug]: <title>"
 labels: [Bug]
 body:
 - type: checkboxes
   attributes:
     label: Please confirm the following
-    description: |
     options:
       - label: I agree to follow the [Code of Conduct](TODO) that this project adheres to.
         required: true
