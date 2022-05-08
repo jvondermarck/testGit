@@ -1,0 +1,38 @@
+name: Pull Request
+description: Suggest an a 
+title: "[PR]: <title> #<issue>"
+labels: [Enhancement]
+body:
+  - type: checkboxes
+    attributes:
+      label: 👉 Please confirm the following
+      options:
+        - label: I agree to follow the [Code of Conduct](https://github.com/dylan-power/dinosaur-exploder/blob/main/CODE_OF_CONDUCT.md) that this project adheres to.
+          required: true
+        - label: I have reviewed my submission thoroughly.
+          required: true
+        - label: I have tested my code (if submission is related to coding) and run the game before pushing.
+          required: true
+        - label: I have run the JUnit tests.
+          required: true
+  - type: textarea
+    attributes:
+      label: Description 
+      description: Please concisely describe the changes you have made. 
+    validations:
+      required: false
+  - type: textarea
+    attributes:
+      label: Issue link
+      description: Issue reference number and link goes here e.g. 'Fixes #<number_issue>'.
+    validations:
+      required: false
+  - type: textarea
+    attributes:
+      label: ✍ Additional context
+      description: Is there anything else you can add about the proposal? You might want to link to related issues here, if you haven't already.
+    validations:
+      required: false
+  - type: markdown
+    attributes:
+      value: Thanks for taking the time to fill out this Pull Request ! ❤️ Thanks to contribute to this project 🦖
